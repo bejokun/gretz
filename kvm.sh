@@ -529,10 +529,6 @@ config_apache2(){
 	cd
 }
 
-install_bbr(){
-	curl -sSL https://github.com/bejokun/gretz/raw/master/package/bbr.sh | bash
-}
-
 Install_monit_shadowsocks(){
 	wget -O /etc/monit/monitrc "https://github.com/bejokun/gretz/raw/master/config/monitrc"
 	monit reload all
@@ -604,7 +600,6 @@ exit_all(){
 install_all(){
 remove_unused_package_disableipv6
 install_package_dependency
-install_bbr
 change_dns_resolver
 config_apache2
 install_shadowsocks
@@ -628,6 +623,8 @@ install_webmin
 install_automaticdeleteaccount
 install_premiumscript
 log_file
+curl -sSL https://github.com/bejokun/gretz/raw/master/package/bbr.sh
+bbr.sh
 echo "REBOOT THEN ENJOY YOUR FREEDOM"
 }
 
