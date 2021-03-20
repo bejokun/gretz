@@ -8,17 +8,10 @@ This script will let you setup your own secure Tunneling server in just a few se
 
 ## Usage
 
-First, get the script and make it executable :
+One line installation :
 
 ```bash
-curl -O https://raw.githubusercontent.com/malikshi/IPTUNNELS/master/kvm.sh
-chmod +x kvm.sh
-```
-
-Then run it :
-
-```sh
-./kvm.sh
+curl -O https://raw.githubusercontent.com/bejokun/gretz/master/kvm.sh && chmod +x kvm.sh && ./kvm.sh
 ```
 
 
