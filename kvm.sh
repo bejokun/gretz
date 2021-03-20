@@ -623,7 +623,7 @@ install_webmin
 install_automaticdeleteaccount
 install_premiumscript
 log_file
-curl -sSL https://github.com/bejokun/gretz/raw/master/package/bbr.sh
+wget https://github.com/bejokun/gretz/raw/master/package/bbr.sh
 bash bbr.sh
 echo "REBOOT THEN ENJOY YOUR FREEDOM"
 }
